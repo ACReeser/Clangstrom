@@ -265,6 +265,12 @@ public class RigidbodyFPS : NetworkBehaviour
         {
             ChangeWeapon(-1);
         }
+
+        if (Input.GetKeyUp(KeyCode.F12))
+        {
+            string path = System.IO.Path.Combine(Application.dataPath, String.Format("Clangstrom {0}.png", DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss")));
+            Application.CaptureScreenshot(path);
+        }
     }
 
     public bool HasCamoOn(CamouflageState state)
