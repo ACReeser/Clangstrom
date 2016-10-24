@@ -1,10 +1,46 @@
 
+html{
+  margin:0;
+  padding:0;
+  background: linear-gradient(269deg, #1100ff, #ffffff, #ff9400);
+  background-size: 600% 600%;
+  
+  -webkit-animation: OrangeToBlue 30s ease infinite;
+  -moz-animation: OrangeToBlue 30s ease infinite;
+  animation: OrangeToBlue 30s ease infinite;
+}
 body{
   max-width:900px;
   margin:auto;
+  background:rgba(255,255,255,.8);
+  margin-top:0;
+  padding:12px;
 }
 
 .imgur-gif, .imgur-gif img{
   max-width:100%;
   display:block;
+}
+
+h1 img{
+  max-width:400px;
+}
+h1, h2, h3 {
+  text-align:center;
+}
+
+@-webkit-keyframes OrangeToBlue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes OrangeToBlue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes OrangeToBlue { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
